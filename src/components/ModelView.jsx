@@ -11,7 +11,7 @@ const ModelView = ({
   index,
   groupRef,
   gsapType,
-  ctonrolRef,
+  controlRef,
   setRotationSize,
   size,
   item,
