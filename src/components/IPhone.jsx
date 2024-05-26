@@ -38,11 +38,11 @@ function Model(props) {
         material={materials.hUlRcbieVuIiOXG}
         scale={0.01}
       />
-      <mesh
+      <mesh // mercek 1
         castShadow
         receiveShadow
         geometry={nodes.DjsDkGiopeiEJZK.geometry}
-        material={materials.PaletteMaterial001}
+        material={new THREE.MeshStandardMaterial({ color: props.item.color[0] })}
         scale={0.01}
       />
       <mesh
@@ -108,12 +108,14 @@ function Model(props) {
         material={materials.eShKpuMNVJTRrgg}
         scale={0.01}
       />
-      <mesh
+      <mesh //KENar
         castShadow
         receiveShadow
         geometry={nodes.pvdHknDTGDzVpwc.geometry}
         material={materials.xdyiJLYTYRfJffH}
         scale={0.01}
+        material-opacity={0.2} // Opaklık değerini düşürerek yoğunluğu azaltabilirsiniz
+        material-transparent={true} // Şeffaflık özelliğini etkinleştirir
       />
       <mesh
         castShadow
@@ -169,26 +171,27 @@ function Model(props) {
       />
       <mesh
         castShadow
-        receiveShadow
         geometry={nodes.KSWlaxBcnPDpFCs.geometry}
         material={materials.yQQySPTfbEJufve}
         scale={0.01}
       />
-      <mesh
+      <mesh // kamera
         castShadow
         receiveShadow
         geometry={nodes.TakBsdEjEytCAMK.geometry}
-        material={materials.PaletteMaterial003}
+        material={new THREE.MeshStandardMaterial({ color: props.item.color[0] })}
         scale={0.01}
+        material-opacity={0.15} // Opaklık değerini düşürerek yoğunluğu azaltabilirsiniz
+        material-transparent={true} // Şeffaflık özelliğini etkinleştirir
       />
-      <mesh
+      <mesh // Apple -1
         castShadow
         receiveShadow
         geometry={nodes.IykfmVvLplTsTEW.geometry}
         material={materials.PaletteMaterial004}
         scale={0.01}
       />
-      <mesh
+      <mesh // Ana gövde
         castShadow
         receiveShadow
         geometry={nodes.wLfSXtbwRlBrwof.geometry}
@@ -202,11 +205,11 @@ function Model(props) {
         material={materials.yhcAXNGcJWCqtIS}
         scale={0.01}
       />
-      <mesh
+      <mesh // burası
         castShadow
         receiveShadow
         geometry={nodes.YfrJNXgMvGOAfzz.geometry}
-        material={materials.bCgzXjHOanGdTFV}
+        material={new THREE.MeshBasicMaterial({ color: props.item.color[0] })}
         scale={0.01}
       />
       <mesh
