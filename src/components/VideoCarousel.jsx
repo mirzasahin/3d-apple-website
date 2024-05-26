@@ -157,7 +157,7 @@ const VideoCarousel = () => {
                   muted
                   className={`${
                     list.id === 2 && 'translate-x-44'}
-                    pointer-events-none`}
+                    pointer-events-non`}
                   ref={(el) => (videoRef.current[i] = el)}
                   onEnded={() => {
                     i !== 3
